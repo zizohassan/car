@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Application\Transformers;
+
+use Illuminate\Database\Eloquent\Model;
+
+class DummyClassTransformers extends AbstractTransformer
+{
+
+    public function transformModel(Model $modelOrCollection)
+    {
+        return [
+            DummyEn
+        ];
+    }
+
+    public function transformModelAr(Model $modelOrCollection)
+    {
+        return [
+           DummyAr
+        ];
+    }
+
+}

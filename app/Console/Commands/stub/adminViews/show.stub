@@ -1,0 +1,13 @@
+@extends(layoutExtend())
+
+@section('title')
+    {{ trans('DummyView.DummyView') }} {{ trans('home.view') }}
+@endsection
+
+@section('content')
+    @component(layoutForm() , ['title' => trans('DummyView.DummyView') , 'model' => 'DummyView' , 'action' => trans('home.view')  ])
+DummyTable
+        @include('admin.DummyView.buttons.delete' , ['id' => $item->id])
+        @include('admin.DummyView.buttons.edit' , ['id' => $item->id])
+    @endcomponent
+@endsection
