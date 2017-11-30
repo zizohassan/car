@@ -59,5 +59,7 @@
     @endif</tr>
    </tr>
   </table>
+  @include("website.car.comment.show")
+  @include("website.car.comment.edit")
 </div>
 @endsection

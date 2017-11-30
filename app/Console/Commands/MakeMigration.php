@@ -45,7 +45,7 @@ class MakeMigration extends GeneratorCommand
                 if($key == 0){
                     $name = $c;
                 }elseif($key == 1){
-                        $this->colsMigration[$name] = $c;
+                    $this->colsMigration[$name] = $c;
                 }
             }
         }

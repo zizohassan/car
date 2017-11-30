@@ -165,7 +165,11 @@
             </div>
     </nav>
     @yield('content')
-    <div class="bottommenu">
+
+    <div class="row bottommenu clearfix">
+        <br>
+        <br>
+        <br>
         <div class="bottomlogo">
             <span class="dotlogo">&bullet;</span><img src="/website/image/collectionlogo1.png" alt="logo1"><span
                     class="dotlogo">&bullet;;</span>

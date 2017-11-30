@@ -109,98 +109,6 @@ Route::get('contact/{id}/delete', 'ContactController@destroy');
 Route::get('contact/{id}/view', 'ContactController@getById');
 Route::post('contact/replay/{id}', 'ContactController@replayEmail');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #### brand control
 Route::get('brand' , 'BrandController@index');
 Route::get('brand/item/{id?}' , 'BrandController@show');
@@ -253,3 +161,9 @@ Route::post('slider/item' , 'SliderController@store');
 Route::post('slider/item/{id}' , 'SliderController@update');
 Route::get('slider/{id}/delete' , 'SliderController@destroy');
 Route::get('slider/{id}/view' , 'SliderController@getById');
+
+
+#### car comment
+Route::post('car/add/comment/{id}' , 'CarCommentController@addComment');
+Route::post('car/update/comment/{id}' , 'CarCommentController@updateComment');
+Route::get('car/delete/comment/{id}' , 'CarCommentController@deleteComment');

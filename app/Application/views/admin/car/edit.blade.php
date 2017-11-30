@@ -64,5 +64,6 @@
             </button>
         </div>
     </form>
+    @include("admin.car.comment.edit")
     @endcomponent
 @endsection

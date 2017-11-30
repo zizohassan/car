@@ -4,9 +4,12 @@
  class Car extends Model
 {
    public $table = "car";
-   public function regoin(){
-		return $this->belongsTo(Regoin::class, "regoin_id");
+   public function carcomment(){
+		return $this->hasMany(CarComment::class, "car_id");
 		}
+   public function regoin(){
+  return $this->belongsTo(Regoin::class, "regoin_id");
+  }
    public function country(){
   return $this->belongsTo(Country::class, "country_id");
   }

@@ -17,7 +17,7 @@
         </div>
 
 
-        <div>
+        <div class="clearfix">
             <div class="latestcars">
                 <h1 class="text-center">• {{ trans('website.LATEST CARS') }} •</h1>
             </div>

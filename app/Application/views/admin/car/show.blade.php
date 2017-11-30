@@ -58,6 +58,8 @@
     @endif</tr>
    </tr>
   </table>
+  @include("admin.car.comment.show")
+  @include("admin.car.comment.edit")
           @include('admin.car.buttons.delete' , ['id' => $item->id])
         @include('admin.car.buttons.edit' , ['id' => $item->id])
     @endcomponent
